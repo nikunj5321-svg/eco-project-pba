@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PBA Team Grandmasters | Eco Innovation Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#020617;
+      color:#e5e7eb;
+      scroll-behavior:smooth;
+    }
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(2,6,23,0.9);
+      backdrop-filter:blur(10px);
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 40px;
+    }
+    nav h1{color:#22c55e;font-size:1.3rem}
+    nav a{color:#e5e7eb;text-decoration:none;margin-left:20px;font-weight:500}
+    nav a:hover{color:#22c55e}
+
+    header{
+      min-height:100vh;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:40px;
+      background:linear-gradient(135deg,#16a34a,#22c55e,#4ade80);
+      color:#022c22;
+    }
+    header h2{font-size:3.5rem;margin-bottom:20px}
+    header p{max-width:900px;font-size:1.2rem}
+
+    section{padding:90px 40px;max-width:1300px;margin:auto}
+    section h3{text-align:center;font-size:2.5rem;color:#4ade80}
+    .subtitle{text-align:center;max-width:900px;margin:15px auto 60px;opacity:0.9}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px
+    }
+    .card{
+      background:#020617;
+      border:1px solid #1e293b;
+      border-radius:22px;
+      padding:35px;
+      position:relative;
+      overflow:hidden;
+      transition:transform .3s,box-shadow .3s
+    }
+    .card::before{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(120deg,transparent,#22c55e33,transparent);
+      opacity:0;transition:.3s
+    }
+    .card:hover::before{opacity:1}
+    .card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,.6)}
+    .card h4{color:#86efac;font-size:1.4rem;margin-bottom:10px}
+
+    .timeline{border-left:3px solid #22c55e;padding-left:30px}
+    .step{margin-bottom:40px}
+    .step h4{color:#4ade80}
+
+    .team{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+    .member{
+      background:#020617;border:1px solid #1e293b;
+      padding:20px 30px;border-radius:20px;font-weight:600
+    }
+
+    .impact{
+      background:linear-gradient(135deg,#0ea5e9,#2563eb);
+      border-radius:30px;padding:70px 40px;text-align:center
+    }
+    .impact h3{color:white}
+
+    footer{
+      background:#000;text-align:center;padding:40px;font-size:.9rem;opacity:.8
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>PBA Grandmasters</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#process">Process</a>
+    <a href="#team">Team</a>
+    <a href="#impact">Impact</a>
+  </div>
+</nav>
+
+<header>
+  <div>
+    <h2>Turning Waste into Innovation</h2>
+    <p>An advanced eco-project website by <b>PBA Team Grandmasters</b>, showcasing how imagination, teamwork, and sustainability can transform waste into energy, greenery, and fashion.</p>
+  </div>
+</header>
+
+<section id="about">
+  <h3>About the Initiative</h3>
+  <p class="subtitle">This project demonstrates the power of reuse and recycling through three innovative eco-models built entirely from waste materials.</p>
+  <div class="grid">
+    <div class="card"><h4>Eco Thinking</h4><p>We learned that waste is a resource, not a problem.</p></div>
+    <div class="card"><h4>Sustainability</h4><p>Our models focus on renewable energy, green spaces, and recycling.</p></div>
+    <div class="card"><h4>Innovation</h4><p>Simple materials + imagination = meaningful solutions.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Our Projects</h3>
+  <p class="subtitle">Three core projects representing energy, environment, and creativity.</p>
+  <div class="grid">
+    <div class="card"><h4>Biogas Planter</h4><p>Plastic bottles, cow dung, and food waste were used to produce biogas through anaerobic decomposition.</p></div>
+    <div class="card"><h4>Vertical Gardening</h4><p>Waste plastic bottles arranged vertically to grow plants in limited spaces.</p></div>
+    <div class="card"><h4>Fashion from Waste</h4><p>Old cloth and wrappers transformed into bags, bracelets, and accessories.</p></div>
+  </div>
+</section>
+
+<section id="process">
+  <h3>Project Workflow</h3>
+  <p class="subtitle">Step-by-step learning journey followed by our team.</p>
+  <div class="timeline">
+    <div class="step"><h4>1. Planning</h4><p>Brainstorming ideas and selecting eco-friendly concepts.</p></div>
+    <div class="step"><h4>2. Collection</h4><p>Gathering waste materials from homes and surroundings.</p></div>
+    <div class="step"><h4>3. Execution</h4><p>Building models using teamwork and creativity.</p></div>
+    <div class="step"><h4>4. Learning</h4><p>Understanding sustainability, recycling, and responsibility.</p></div>
+  </div>
+</section>
+
+<section id="team">
+  <h3>Team Grandmasters</h3>
+  <p class="subtitle">Every member played a vital role in making this project successful.</p>
+  <div class="team">
+    <div class="member">Nikunj</div>
+    <div class="member">Madhav</div>
+    <div class="member">Satvik</div>
+    <div class="member">Kushagra</div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="impact">
+    <h3>Impact & Conclusion</h3>
+    <p>This project taught us creativity, teamwork, and environmental responsibility. We realized that small eco-friendly actions can create a big positive impact on our planet.</p>
+  </div>
+</section>
+
+<section id="acknowledgement">
+  <h3>Acknowledgement</h3>
+  <p class="subtitle">We sincerely thank our school, teacher, and mentors for their guidance and support in completing this project successfully.</p>
+</section>
+
+<section id="school">
+  <h3>Project Details</h3>
+  <div class="grid">
+    <div class="card"><h4>School / Institution</h4><p>__________________________</p></div>
+    <div class="card"><h4>Subject</h4><p>Environmental Studies / Science</p></div>
+    <div class="card"><h4>Teacher</h4><p>__________________________</p></div>
+    <div class="card"><h4>Academic Year</h4><p>2025 – 2026</p></div>
+  </div>
+</section>
+
+<section id="certificate">
+  <h3>Certificate</h3>
+  <div class="card" style="max-width:900px;margin:auto;text-align:center">
+    <p>This is to certify that <b>PBA Team Grandmasters</b> has successfully completed the eco-friendly project titled <b>“Turning Waste into Innovation”</b> as part of academic requirements.</p>
+    <br><p><b>Teacher Signature:</b> ____________</p>
+    <p><b>Date:</b> ____________</p>
+  </div>
+</section>
+
+<section id="future">
+  <h3>Future Scope</h3>
+  <p class="subtitle">In the future, these projects can be expanded into real-world applications such as community biogas plants, urban vertical gardens, and sustainable fashion initiatives.</p>
+</section>
+
+<footer>
+  <p>© 2025 PBA Team Grandmasters | Advanced Eco Project Website</p>
+</footer>
+
+</body>
+</html>
